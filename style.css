@@ -65,6 +65,10 @@ html {
   .container {
     width: 100%;
     max-width: 800px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -79,11 +83,6 @@ html {
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
-  }
-  .container {
-    width: 90%;
-    /* max-width: 1280px; */
-    margin: 0 auto;
   }
 }
 
