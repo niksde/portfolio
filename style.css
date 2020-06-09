@@ -89,7 +89,7 @@ html {
 /* Base styles */
 
 body {
-  font-family: Inter, "Segoe UI";
+  font-family: Inter;
   font-size: 1.8rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb {
 
 h1,
 h2 {
-  font-family: Inter, "Segoe UI";
+  font-family: Inter;
   font-weight: 700;
   text-align: center;
 }

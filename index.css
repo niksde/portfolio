@@ -26,7 +26,8 @@ html {
 }
 
 body {
-  font-family: Inter;
+  /* font-family: Inter; */
+  font-family: sans-serif;
   overflow-y: scroll;
 }
 
@@ -91,7 +92,14 @@ li {
 }
 
 .container a::after {
-  content: "↗";
+  font-family: FontAwesome;
+  content: "\f062";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media (max-width: 28.75em) {
@@ -153,7 +161,10 @@ li {
 
 .skills-section li:before,
 .project li:before {
-  content: "✓";
+  /* content: "✓"; */
+  font-family: FontAwesome;
+  content: "\f00C";
+
   color: var(--accent-bullet);
   padding-right: 5px;
 }
