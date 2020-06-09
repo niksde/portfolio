@@ -1,0 +1,128 @@
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-image: var(--primary-white);
+  padding: 2rem;
+}
+
+.welcome-section p {
+  font-size: 2rem;
+}
+
+.background-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-image: linear-gradient(
+    62deg,
+    var(--primary-main) 0%,
+    var(--secondary-main) 100%
+  );
+  padding: 2rem;
+}
+
+.background-section p {
+  font-size: 1.2rem;
+}
+
+.skills-section {
+  background-image: var(--primary-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+#skills-title {
+  color: var(--accent-title);
+  display: flex;
+  justify-content: center;
+}
+
+#skills-section h3 {
+  width: 5rem;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills-section ul {
+  padding: 1.5rem;
+}
+
+.skills-section li {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.projects-section {
+  background-image: var(--primary-main);
+  padding: 0.5rem;
+}
+
+.projects-section-header {
+  color: var(--accent-title);
+  padding: 0.5rem;
+}
+
+.skills-section li:before,
+.project li:before {
+  font-family: FontAwesome;
+  content: "\f00C";
+  color: var(--accent-bullet);
+  padding-right: 5px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  margin-right: 2rem;
+  border: 1px solid var(--secondary-main);
+}
+
+.project-title::after {
+  font-family: FontAwesome;
+  content: "\f062";
+  display: inline-block;
+  padding-left: 0.7rem;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  padding: 2rem;
+}
+
+.experience-section h3 {
+  color: var(--accent-title);
+}
