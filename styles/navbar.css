@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  background-image: linear-gradient(
+    -62deg,
+    var(--primary-main) 0%,
+    var(--secondary-main) 100%
+  );
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list li {
+  display: block;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-list a {
+  color: var(--primary-dark);
+  padding: 0.3rem;
+}
+
+.nav-list a:hover {
+  background: var(--secondary-main);
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}

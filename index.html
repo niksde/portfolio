@@ -5,194 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      href="https://fonts.googleapis.com/css?family=Inter:200i,300,400,700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family='Source Sans Pro':700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family='Source Sans Pro':200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family='Source Sans Pro':700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>nikhilshisode portfolio</title>
+    <script src="https://kit.fontawesome.com/34033c1e37.js"></script>
+    <link href="styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <script src="index.js" type="text/javascript"></script>
+    <title>Nikhil Shisode | software developer</title>
   </head>
   <body>
     <!-- START NAV -->
-
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
+    <div w3-include-html="src/navbar.html"></div>
     <!-- END NAV -->
 
+    <!-- <div class="container"> -->
     <!-- START WELCOME SECTION -->
-
-    <section id="welcome-section" class="welcome-section">
-      <h1>Hi!, I'm Nikhil Shisode</h1>
-      <p>I'm a Full Stack Developer</p>
-    </section>
-
+    <div w3-include-html="src/banner.html"></div>
     <!-- END WELCOME SECTION -->
-
+    <!-- START background SECTION -->
+    <div w3-include-html="src/background.html"></div>
+    <!-- END background SECTION -->
+    <!-- START skills SECTION -->
+    <div w3-include-html="src/skills.html"></div>
+    <!-- END skills SECTION -->
     <!-- START PROJECTS SECTION -->
 
-    <section id="projects" class="projects-section">
-      <h2 class="projects-section-header">Take a look at my projects</h2>
-
-      <div class="projects-grid">
-        <a
-          href="https://bugtrackerapp.netlify.app/"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img class="project-image" src="bugtracker.png" alt="project" />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Bug Tracker App
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://movies-rentals.herokuapp.com/"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img class="project-image" src="Movie.jpg" alt="project" />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Movie Rental App
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://books-lists.herokuapp.com/"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img class="project-image" src="book-list.jpg" alt="project" />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Reading list App
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-      </div>
-    </section>
-
+    <div w3-include-html="src/projects.html"></div>
     <!-- END PROJECTS SECTION -->
-
-    <!-- start Video SECTION -->
-    <section id="projects" class="projects-section">
-      <h2 class="projects-section-header">Project demo</h2>
-
-      <div class="projects-grid">
-        <a
-          href="https://youtu.be/qwCWc7KwoU4"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img class="project-image" src="bugTrackerDemo.jpg" alt="project" />
-          <p class="project-title">
-            Bug Tracker App Demo
-          </p>
-        </a>
-        <a
-          href="https://youtu.be/Hhktjy8tAfc"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img class="project-image" src="movieRentalDemo.jpg" alt="project" />
-          <p class="project-title">
-            Movie Rental App Demo
-          </p>
-        </a>
-      </div>
-    </section>
-    <!-- END videos SECTION -->
+    <!-- START experience SECTION -->
+    <div w3-include-html="src/experience.html"></div>
+    <!-- END experience SECTION -->
+    <!-- START education SECTION -->
+    <div w3-include-html="src/education.html"></div>
+    <!-- END education SECTION -->
+    <div w3-include-html="src/videos.html"></div>
+    <!-- </div> -->
 
     <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let's work together...</h2>
-        <p>contact me</p>
-      </div>
-      <div class="contact-links">
-        <a
-          id="profile-link"
-          href="https://www.linkedin.com/in/NikhilShisode"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-linkedin"></i> Linkedin</a
-        >
-        <a
-          id="profile-link"
-          href="https://github.com/nikhilshisode"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://twitter.com/nikhilshisode"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-twitter"></i> Twitter</a
-        >
-        <a href="mailto:nikhilshisode6@gmail.com" class="btn contact-details"
-          ><i class="fas fa-at"></i> Send a mail</a
-        >
-      </div>
-    </section>
-
+    <div w3-include-html="src/contact.html"></div>
     <!-- END CONTACT SECTION -->
-
     <!-- START FOOTER SECTION -->
-
-    <footer>
-      <p>
-        &copy; nikhil Shisode
-      </p>
-    </footer>
-
+    <div w3-include-html="src/footer.html"></div>
     <!-- END FOOTER SECTION -->
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>
