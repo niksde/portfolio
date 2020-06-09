@@ -91,7 +91,7 @@ li {
   color: var(--primary-white);
 }
 
-.container a::after {
+/* .container a::after {
   font-family: FontAwesome;
   content: "\f062";
   display: inline-block;
@@ -100,7 +100,7 @@ li {
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+} */
 
 @media (max-width: 28.75em) {
   .nav {
@@ -149,7 +149,7 @@ li {
   width: 5rem;
 }
 
-.skills-section > ul {
+.skills-section ul {
   padding: 1.5rem;
 }
 
@@ -161,10 +161,8 @@ li {
 
 .skills-section li:before,
 .project li:before {
-  /* content: "✓"; */
   font-family: FontAwesome;
   content: "\f00C";
-
   color: var(--accent-bullet);
   padding-right: 5px;
 }
@@ -172,6 +170,7 @@ li {
 .project {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .project-image {
@@ -181,11 +180,14 @@ li {
   object-fit: cover;
 }
 
-.project-title {
-  display: flex;
-  flex-direction: row;
-}
-
-.project-title h3 {
-  display: inline;
+.project-title::after {
+  font-family: FontAwesome;
+  content: "\f062";
+  display: inline-block;
+  padding-left: 0.7rem;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
