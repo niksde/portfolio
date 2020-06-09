@@ -1,5 +1,5 @@
 .container {
-  with: 100%;
+  width: 100%;
   max-width: 1024px;
   margin: 50px auto;
 }
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   background-image: linear-gradient(
     62deg,
     var(--primary-main) 0%,
@@ -151,7 +151,7 @@
 }
 
 .experience-section {
-  height: 50vh;
+  /* height: 50vh; */
   padding: 2rem;
 }
 
@@ -164,8 +164,8 @@
 }
 
 .education-section {
-  height: 25vh;
-  padding: 2rem;
+  /* height: 25vh; */
+  padding: 1rem 2rem;
 }
 
 #education-title {
@@ -199,7 +199,7 @@
 
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
