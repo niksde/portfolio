@@ -1,9 +1,7 @@
 .container {
+  with: 100%;
   max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 50px auto;
 }
 
 .welcome-section {
@@ -71,6 +69,26 @@
   font-weight: 200;
 }
 
+@media (max-width: 28.75em) {
+  #skills-title {
+    justify-content: start;
+    padding-left: 1rem;
+  }
+  .skills-section {
+    padding: 0.1rem;
+    height: 100%;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .skills ul {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .projects-section {
   background-image: var(--primary-main);
   padding: 0.5rem;
@@ -92,8 +110,23 @@
 
 .project {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 28.75em) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .project-title {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  project-description p {
+    padding-left: 1rem;
+  }
 }
 
 .project-image {
@@ -118,10 +151,6 @@
 }
 
 .experience-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
   height: 50vh;
   padding: 2rem;
 }
@@ -135,10 +164,6 @@
 }
 
 .education-section {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  width: 100vw;
   height: 25vh;
   padding: 2rem;
 }
