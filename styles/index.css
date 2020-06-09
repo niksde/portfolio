@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
   height: 50vh;
   background-image: var(--primary-white);
   padding: 2rem;
@@ -22,8 +21,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
-  /* height: 50vh; */
   background-image: linear-gradient(
     62deg,
     var(--primary-main) 0%,
