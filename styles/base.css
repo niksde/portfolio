@@ -57,7 +57,14 @@ ul {
   list-style: none;
 }
 
-li {
-  padding-left: 1em;
-  text-indent: -1em;
+hr {
+  border: 0;
+  height: 1px;
+  /* background: #737272; */
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    var(--secondary-main),
+    #fff
+  );
 }
