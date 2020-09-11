@@ -19,6 +19,16 @@
   font-size: 2rem;
 }
 
+#greeting {
+  font-size: 1.5rem;
+  padding-bottom: 7px;
+}
+
+#tagline {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
 .background-section {
   display: flex;
   flex-direction: column;
@@ -50,11 +60,6 @@
   justify-content: center;
 }
 
-#skills-section h3 {
-  width: 5rem;
-  justify-content: center;
-}
-
 .skills {
   display: flex;
   justify-content: center;
@@ -70,13 +75,9 @@
 }
 
 @media (max-width: 28.75em) {
-  #skills-title {
-    justify-content: center;
-    padding-bottom: 0.5rem;
-  }
   .skills-section {
-    padding: 0.1rem;
     height: 100%;
+    padding: 0 1.2rem;
   }
   .skills {
     display: grid;
@@ -98,6 +99,7 @@
 .projects-section-header {
   color: var(--accent-title);
   padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .skills-section li:before,
@@ -153,6 +155,7 @@
 
 #experience-title {
   color: var(--accent-title);
+  padding-bottom: 1rem;
 }
 
 .experience-section ul {
@@ -165,6 +168,7 @@
 
 #education-title {
   color: var(--accent-title);
+  padding-bottom: 1rem;
 }
 
 .education-section ul {
@@ -199,7 +203,7 @@
 
 .contact-section-header > h2 {
   font-size: 3rem;
-  color: var(--primary-white);
+  color: var(--primary-dark);
 }
 
 @media (max-width: 28.75em) {
