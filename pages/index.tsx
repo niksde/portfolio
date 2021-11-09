@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <div className={styles.heroSection}>
           <b className={styles.description}>Hello 👋</b>
           <h1 className={styles.title}>
-            I'm Nikhil Shisode, a Fullstack Developer 👨‍💻
+            I&apos;m Nikhil Shisode, a Fullstack Developer 👨‍💻
           </h1>
           <p className={styles.description}>
             Software Engineering professional with a B.E focused in Computer
