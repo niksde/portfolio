@@ -39,10 +39,18 @@
   text-decoration: underline;
 }
 
+.heroSection {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -51,9 +59,10 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  max-width: 550px;
 }
 
 .code {
@@ -71,6 +80,35 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  align-items: stretch;
+}
+
+.expSection {
+  margin: 0.2rem 0.8rem;
+  padding: 1rem;
+  text-align: left;
+  color: inherit;
+  width: 100%;
+}
+
+.expSection h3,
+.expSection p {
+  padding: 0;
+  margin: 0;
+}
+
+.expSection ul li {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.verticalLine {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  border-left: 2px solid grey;
+  margin: -1.5rem 0 0 -0.9rem;
 }
 
 .card {
