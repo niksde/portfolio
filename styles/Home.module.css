@@ -70,8 +70,8 @@
   max-width: 550px;
 }
 
-.title .accent {
-  color: #58a6ff;
+.accent {
+  color: #58a6ff !important;
 }
 
 .code {

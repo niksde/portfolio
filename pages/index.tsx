@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               list={["MongoDB", "DynamoDB", "PostgreSQL", "MySQL"]}
             />
             <div className={styles.mainExpSection}>
-              <h2>Experience</h2>
+              <h2>Experience - <span className={styles.accent}>2+ years</span></h2>
               <div className={styles.grid}>
                 <ExperienceCard
                   job="Fullstack Developer"
