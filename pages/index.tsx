@@ -6,7 +6,7 @@ import ExperienceCard from "../components/ExperienceCard";
 
 const Home: NextPage = () => {
   const onResumeClick = () => {
-    window.open(process.env.RESUME_URL, '_blank')?.focus();
+    window.open(process.env.NEXT_PUBLIC_RESUME_URL, '_blank')?.focus();
   }
 
   return (
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <div className={styles.heroSection}>
             <div className={styles.aboveTitle}>
               <b className={styles.description}>Hello 👋</b>
-              <button className={styles.button} onClick={onResumeClick}>Resume </button>
+              <button className={styles.button} onClick={onResumeClick}>Resume</button>
             </div>
             <h1 className={styles.title}>
               I&apos;m Nikhil Shisode, a
