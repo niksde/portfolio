@@ -143,7 +143,6 @@
 .card:hover,
 .card:focus,
 .card:active {
-  /* color: #58a6ff; */
   border-color: #8b949e; 
   background-color: #161b22;
 }
@@ -172,5 +171,22 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+/* mobile css */
+@media (max-width: 425px) {
+  .expSection ul {
+    padding-left: 24px;
+  }
+
+  .verticalLine {
+    height: 100%;
+    margin: -1.5rem 0 0 -1rem;
+  }
+
+  .card {
+    margin: 1rem 0rem;
+    max-width: 100%;
   }
 }
