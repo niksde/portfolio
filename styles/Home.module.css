@@ -90,6 +90,7 @@
   flex-wrap: wrap;
   max-width: 800px;
   align-items: stretch;
+  grid-gap: 1rem;
 }
 
 .expSection {
@@ -119,17 +120,7 @@
   position: relative;
 }
 
-.verticalLine {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  border-left: 2px solid grey;
-  margin: -1.5rem 0 0 -1rem;
-}
-
 .card {
-  margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -156,10 +147,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.card ul {
-  padding-left: 24px;
 }
 
 .logo {
@@ -204,26 +191,56 @@
   background-color: #2ea043;
 }
 
+.listWrapper {
+  position: relative;
+}
+
+.listItemWrapper {
+  margin-top: 10px;
+  position: relative;
+}
+
+.listBullet {
+  float: left;
+  background: #30363d;
+  height: 10px;
+  width: 20px;
+  line-height: 30px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.primaryBullet {
+  margin-right: 20px;
+}
+
+.secondaryBullet {
+  margin-right: 15px;
+}
+
+.listItem {
+  display: table-row;
+  vertical-align: middle;
+}
+
+.listTitle {
+  font-weight: 700;
+}
+
+.listText {
+  font-weight: 400;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
-
-/* mobile css */
-@media (max-width: 425px) {
-  .expSection ul {
-    padding-left: 24px;
-  }
-
-  .verticalLine {
-    height: 100%;
-    margin: -1.5rem 0 0 -1rem;
-  }
 
   .card {
-    margin: 1rem 0rem;
     max-width: 100%;
   }
 }

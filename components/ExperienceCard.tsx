@@ -1,5 +1,6 @@
 import React, { ReactChild } from "react";
 import styles from "../styles/Home.module.css";
+import List from "./List";
 
 type PositionType = {
   position: String;
@@ -22,18 +23,16 @@ const ExperienceCard = ({
       <h3>
         {job} @ {organisation}
       </h3>
-      <ul>
-        {positionList.map((item, idx) => (
-          <li key={`${idx}-position`}>
+      <List
+        items={positionList}
+        renderChild={(item) => (
+          <>
             <h3>{item.position}</h3>
             <p>{item.duration}</p>
             {item?.Description}
-            {positionList.length - 1 !== idx && (
-              <div className={styles.verticalLine}></div>
-            )}
-          </li>
-        ))}
-      </ul>
+          </>
+        )}
+      />
     </div>
   );
 };

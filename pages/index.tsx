@@ -3,11 +3,12 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import ExperienceCard from "../components/ExperienceCard";
+import List from "../components/List";
 
 const Home: NextPage = () => {
   const onResumeClick = () => {
-    window.open(process.env.NEXT_PUBLIC_RESUME_URL, '_blank')?.focus();
-  }
+    window.open(process.env.NEXT_PUBLIC_RESUME_URL, "_blank")?.focus();
+  };
 
   return (
     <div className={styles.container}>
@@ -24,7 +25,9 @@ const Home: NextPage = () => {
           <div className={styles.heroSection}>
             <div className={styles.aboveTitle}>
               <b className={styles.description}>Hello 👋</b>
-              <button className={styles.button} onClick={onResumeClick}>Resume</button>
+              <button className={styles.button} onClick={onResumeClick}>
+                Resume
+              </button>
             </div>
             <h1 className={styles.title}>
               I&apos;m Nikhil Shisode, a
@@ -44,13 +47,13 @@ const Home: NextPage = () => {
             <Card
               title="Technologies"
               list={[
-                "React",
+                "ReactJS",
                 "Python",
                 "Redux",
                 "React Native",
-                "Nodejs",
-                "Expressjs",
-                "Nestjs",
+                "NodeJS",
+                "ExpressJS",
+                "NestJS",
               ]}
             />
             <Card
@@ -58,7 +61,9 @@ const Home: NextPage = () => {
               list={["MongoDB", "DynamoDB", "PostgreSQL", "MySQL"]}
             />
             <div className={styles.mainExpSection}>
-              <h2>Experience - <span className={styles.accent}>2+ years</span></h2>
+              <h2>
+                Experience - <span className={styles.accent}>2+ years</span>
+              </h2>
               <div className={styles.grid}>
                 <ExperienceCard
                   job="Fullstack Developer"
@@ -79,15 +84,15 @@ const Home: NextPage = () => {
                         <p key="position-desc-2">
                           Development, Deployment and Maintenance of
                         </p>,
-                        <ul key="position-list-2">
-                          <li>
-                            Frontend web applications made with react, threejs.
-                          </li>
-                          <li>
-                            Backend API on AWS cloud made with python, docker,
-                            js, lambda, dynamodb, appsync.
-                          </li>
-                        </ul>,
+                        <List
+                          key="position-list-2"
+                          items={[
+                            "Frontend web applications made with ReactJS, ReduxJS, ThreeJS.",
+                            "Backend API on AWS cloud made with Python, Docker, Javascript, Lambda, Dynamodb, Appsync.",
+                          ]}
+                          renderChild={(item) => item}
+                          isSecondaryBullet
+                        />,
                       ],
                     },
                   ]}
