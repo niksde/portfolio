@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           </h2>
           <div className={styles.grid}>
             <Card
-              title="Front-end"
+              title="Front-end development"
               list={["ReactJS",
               "Redux",
               "Webpack",
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
               ]}
             />
             <Card
-              title="Back-end"
+              title="Back-end development"
               list={[
                 "NodeJS",
                 "ExpressJS",
