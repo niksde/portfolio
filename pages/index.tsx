@@ -39,30 +39,36 @@ const Home: NextPage = () => {
               Technology, Pune.
             </p>
           </div>
+          <h2>
+            Skills
+          </h2>
           <div className={styles.grid}>
             <Card
-              title="Development Ability"
-              list={["Frontend", "Backend API", "Cross Platform Mobile App"]}
-            />
-            <Card
-              title="Technologies"
-              list={[
-                "ReactJS",
-                "Python",
-                "Redux",
-                "React Native",
-                "NodeJS",
-                "ExpressJS",
-                "NestJS",
+              title="Front-end"
+              list={["ReactJS",
+              "Redux",
+              "Webpack",
+              "HTML5",
+              "CSS3",
+              "Material UI"
               ]}
             />
             <Card
-              title="Databases"
-              list={["MongoDB", "DynamoDB", "PostgreSQL", "MySQL"]}
+              title="Back-end"
+              list={[
+                "NodeJS",
+                "ExpressJS",
+                "Python",
+                "Java",
+                "AWS DynamoDB",
+                "SQL",
+                "AWS",
+                "Docker"
+              ]}
             />
             <div className={styles.mainExpSection}>
               <h2>
-                Experience - <span className={styles.accent}>2+ years</span>
+                Experience - <span className={styles.accent}>2.5+ years</span>
               </h2>
               <div className={styles.grid}>
                 <ExperienceCard
@@ -75,11 +81,11 @@ const Home: NextPage = () => {
                     },
                     {
                       position: "Senior Member Of Technical Staff",
-                      duration: "Nov 2021 - Apr 2022",
+                      duration: "Oct 2021 - Mar 2022",
                     },
                     {
                       position: "Member Of Technical Staff",
-                      duration: "Oct 2020 - Oct 2021",
+                      duration: "Oct 2020 - Sep 2021",
                       Description: [
                         <p key="position-desc-2">
                           Development, Deployment and Maintenance of
