@@ -243,3 +243,9 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 862px) {
+  .subTopic {
+    width: 100%;
+  }
+}
