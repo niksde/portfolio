@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import ExperienceCard from "../components/ExperienceCard";
 import List from "../components/List";
+import { getTotalExperience } from "../utils/experience";
 
 const Home: NextPage = () => {
   const onResumeClick = () => {
@@ -58,7 +59,10 @@ const Home: NextPage = () => {
 
             <div className={styles.mainExpSection}>
               <h2>
-                Experience - <span className={styles.accent}>2.5+ years</span>
+                Experience -{" "}
+                <span className={styles.accent}>
+                  {getTotalExperience(new Date("2020-10-28"))}
+                </span>
               </h2>
               <div className={styles.grid}>
                 <ExperienceCard
