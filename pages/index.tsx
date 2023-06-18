@@ -8,9 +8,9 @@ import List from "../components/List";
 import { getTotalExperience } from "../utils/experience";
 
 const Home: NextPage = () => {
-  const onResumeClick = () => {
-    window.open(process.env.NEXT_PUBLIC_RESUME_URL, "_blank")?.focus();
-  };
+  // const onResumeClick = () => {
+  //   window.open(process.env.NEXT_PUBLIC_RESUME_URL, "_blank")?.focus();
+  // };
 
   return (
     <div className={styles.container}>
