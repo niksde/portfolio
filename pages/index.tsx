@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import ExperienceCard from "../components/ExperienceCard";
@@ -14,58 +15,47 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Nikhil Shisode | Software developer</title>
-        <meta name="description" content="Full-stack developer portfolio" />
-        <link
-          rel="icon"
-          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/279/man-technologist_1f468-200d-1f4bb.png"
-        />
+        <meta name="description" content="Software Engineer Portfolio" />
+        <link rel="icon" href="/coder.png" />
       </Head>
       <div className={styles.body}>
         <main className={styles.main}>
           <div className={styles.heroSection}>
             <div className={styles.aboveTitle}>
               <b className={styles.description}>Hello 👋</b>
-              <button className={styles.button} onClick={onResumeClick}>
+              {/* <button className={styles.button} onClick={onResumeClick}>
                 Resume
-              </button>
+              </button> */}
             </div>
             <h1 className={styles.title}>
               I&apos;m Nikhil Shisode, a
-              <span className={styles.accent}> Fullstack Developer</span> 👨‍💻
+              <span className={styles.accent}> Senior Software Engineer</span>{" "}
+              <Image width={35} height={35} alt="coder" src="/coder.png" />
             </h1>
             <p className={styles.description}>
-              Software Engineering professional with a B.E focused in Computer
-              Science from Dr. D. Y. Patil Institute of Engineering &
-              Technology, Pune.
+              Experienced software engineer with a background of building
+              scalable systems in the data analytics and AEC industries.
             </p>
           </div>
-          <h2>
-            Skills
-          </h2>
+          <div className={styles.subTopic}>
+            <h2>Skills</h2>
+          </div>
           <div className={styles.grid}>
             <Card
+              title="Coding language"
+              list={["Java", "Python", "Javascript", "Typescript"]}
+            />
+            <Card title="Cloud" list={["AWS", "Azure"]} />
+            <Card title="Database" list={["MySQL", "AWS DynamoDB"]} />
+            <Card
               title="Front-end development"
-              list={["ReactJS",
-              "Redux",
-              "Webpack",
-              "HTML5",
-              "CSS3",
-              "Material UI"
-              ]}
+              list={["Angular", "ReactJS", "Redux", "Webpack", "Material UI"]}
             />
             <Card
               title="Back-end development"
-              list={[
-                "NodeJS",
-                "ExpressJS",
-                "Python",
-                "Java",
-                "AWS DynamoDB",
-                "SQL",
-                "AWS",
-                "Docker"
-              ]}
+              list={["Spring Boot", "NodeJS", "ExpressJS", "Docker"]}
             />
+
             <div className={styles.mainExpSection}>
               <h2>
                 Experience - <span className={styles.accent}>2.5+ years</span>
