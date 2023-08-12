@@ -65,13 +65,23 @@ const Home: NextPage = () => {
                 </span>
               </h2>
               <div className={styles.grid}>
+              <ExperienceCard
+                  job="Senior Engineer"
+                  organisation="Tiger Analytics"
+                  positionList={[
+                    {
+                      position: "Senior Engineer",
+                      duration: "June 2023 - Present",
+                    }
+                  ]}
+                />
                 <ExperienceCard
                   job="Fullstack Developer"
                   organisation="Center for Computational Technologies"
                   positionList={[
                     {
                       position: "Team Lead",
-                      duration: "Apr 2022 - Present",
+                      duration: "Apr 2022 - May 2023",
                     },
                     {
                       position: "Senior Member Of Technical Staff",
